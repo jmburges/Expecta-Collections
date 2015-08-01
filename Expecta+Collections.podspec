@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "Expecta+Collections"
-  s.version          = "1.0"
+  s.version          = "1.0.1"
   s.summary          = "Adds equalInAnyOrder to expecta's matchers."
   s.description      = <<-DESC
                        Extends expecta to include matchers for testing collections.
