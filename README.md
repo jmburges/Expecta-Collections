@@ -20,7 +20,25 @@ It's likely that you'll want this in a testing subset, this usually looks like:
         pod 'Expecta+Collections', '~> 1.0'
     end
 
+## Usage
 
+This matcher depends upon Specta and Expecta and requires these `#import` lines in your Spec file:
+
+```objc
+#import "Specta.h"
+#define EXP_SHORTHAND
+#import "Expecta.h"
+```
+Below these lines, add:
+
+```objc
+#import <EXPMatchers+equalInAnyOrder.h>
+```
+To write a test using this matcher, add it to the contents of an `it` block in the Expecta syntax:
+
+```objc
+expect(x).to.equalInAnyOrder(y);
+```
 
 ## License
 
